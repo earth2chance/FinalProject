@@ -67,7 +67,7 @@ void intro() //this function just prints out the intro/start menu of the game
 	std::cout << "                   ################            \n" << std::endl;
 
 
-	std::cout << "Instructions:\n1. Use arrow Keys to move your character\n2. Eat the dots made by the Ghost to gain poins\n3. Don't get caught by the Ghost\n\n";
+	std::cout << "Instructions:\n1. Use arrow Keys to move your character\n2. Eat the dots made by the Ghost to gain points\n3. Don't get caught by the Ghost\n\n";
 	std::cout << "E = Easy\nN = Normal\nH = Hard\n\nChoose your difficulty : ";  
 }
 void ShowMap()//this functions prints out the map array
@@ -153,7 +153,7 @@ void AddArray(int x, int y, int wc, int back) //this function adds the changing 
 	}
 }
 
-void FindPath(int sx, int sy, int x, int y)
+void FindPath(int sx, int sy, int x, int y)//tracks
 {
 	memcpy(tmp_map, map, sizeof(map));
 	BFSArray.clear();
